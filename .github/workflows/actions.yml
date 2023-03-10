@@ -28,4 +28,4 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
           SPOTIFY_RECENTLY_PLAYED: ${{ secrets.SPOTIFY_RECENTLY_PLAYED }}
           BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
-        run: python main.py
+        run: python spotify_daily_job.py

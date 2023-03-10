@@ -1,15 +1,20 @@
 from os import environ
 from io import BytesIO
 from SpotifyAPI import recently_played_df
+from base64 import b64decode
 import datetime
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseUpload
+from json import loads
 
+gcp_cred_file = environ.get("SPOTIFY_RECENTLY_PLAYED")
+gcp_cred_file = b64decode(gcp_cred_file)
+gcp_cred_file = loads(gcp_cred_file.decode())
 
 # GCS Configs
 creds = service_account.Credentials.from_service_account_info(
-    environ.get("SPOTIFY_RECENTLY_PLAYED")
+    gcp_cred_file
 )
 bucket_name = environ.get("BUCKET_NAME")
 service = build("storage", "v1", credentials=creds)
