@@ -6,6 +6,7 @@ This repos uses github actions to get my recently played songs and add it as a p
 * Sign Up for a spotify developer account from [Here](https://developer.spotify.com/)
 * After Sign Up go to [Dashboard](https://developer.spotify.com/dashboard/)
 * Click on Create An App. Give it a name and description and click on create App.
+* After creating the app go to edit settings and in **Redirect URIs** enter **http://localhost:8000**
 * Copy your Client Secret and Client ID and create a secret for github in **Settings -> Secrets -> Actions** as below
   - **SPOTIFY_CLIENT_ID:** Your Spotify Client ID.
   - **SPOTIFY_CLIENT_SECRET:** Your Spotify Client Secret.
