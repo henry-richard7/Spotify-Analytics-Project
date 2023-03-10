@@ -21,7 +21,7 @@ headers = {"Authorization": f"Bearer {access_token}"}
 
 def audio_features(track_id):
      url = f"https://api.spotify.com/v1/audio-features/{track_id}"
-     return requests.get(url,headers=headers)
+     return requests.get(url,headers=headers).json()
 
 def recently_played_df():
     url = "https://api.spotify.com/v1/me/player/recently-played?limit=50"
