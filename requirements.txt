@@ -1,4 +1,4 @@
-pandas
+pandas==1.5.3
 requests
 google-api-python-client
 pyarrow
