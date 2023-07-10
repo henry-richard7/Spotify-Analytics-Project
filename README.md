@@ -1,4 +1,4 @@
-# Spotify-User-Specific-Data
+# Spotify-Analytics-Project
 This repos uses github actions to get my recently played songs and add it as a parquet file in GCS Bucket.
 
 # How to use?
