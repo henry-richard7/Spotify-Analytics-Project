@@ -23,3 +23,8 @@ This repos uses github actions to get my recently played songs and add it as a p
    - **BUCKET_NAME:** The name of your GCS Bucket.
 * Run **encode_service_account.py** in your local to encode the service account json file you got and copy the encoded string and create a secret for github in **Settings -> Secrets -> Actions** as below
   - **SPOTIFY_RECENTLY_PLAYED:** The encoded string you got after running **encode_service_account.py**
+
+# Dashboard
+Source Code: https://github.com/henry-richard7/Spotify-Analytics-Dashboard
+<br/>
+Deployed dashobard : https://github.com/henry-richard7/Spotify-Analytics-Dashboard
