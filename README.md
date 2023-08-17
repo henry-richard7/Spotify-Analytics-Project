@@ -27,4 +27,4 @@ This repos uses github actions to get my recently played songs and add it as a p
 # Dashboard
 Source Code: https://github.com/henry-richard7/Spotify-Analytics-Dashboard
 <br/>
-Deployed dashobard : https://github.com/henry-richard7/Spotify-Analytics-Dashboard
+Deployed dashobard : https://spotify-analytics-dashboard.onrender.com/
